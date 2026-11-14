@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ericksystem - Aplicaciones Móviles</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* --- Contenido Móviles --- */
+        main { padding: 40px 5%; text-align: center; }
+        h1 { color: #8e44ad; font-size: 36px; margin-bottom: 40px; }
+
+        .mobile-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .mobile-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 450px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mobile-card img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 20px;
+            border: 4px solid #333;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .mobile-card h3 {
+            color: #8e44ad;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+
+        .mobile-card p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .badge-coming {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* --- Botón Flotante --- */
+        .chat-widget {
+            position: fixed; bottom: 20px; right: 20px; background-color: #9b59b6; color: white;
+            padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí se cargan automáticamente el header y el nav -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contenido Móviles -->
+    <main>
+        <h1>Aplicaciones Móviles</h1>
+
+        <div class="mobile-container">
+            <div class="mobile-card">
+                <img src="imagenes/reproductor.jpeg" alt="Mi Reproductor de Música">
+                <h3>Mi Reproductor</h3>
+                <p>Reproductor de música personalizado desarrollado en C# con .NET para Android. Organiza y reproduce tus pistas favoritas de forma fluida.</p>
+                <div class="badge-coming">🎵 Muy pronto para descargar</div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="layout.js"></script>
+</body>
+</html>

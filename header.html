@@ -1,0 +1,89 @@
+<!-- HEADER Y NAV -->
+<div id="nav-header-wrapper">
+    <header>
+        <div class="logo-container">
+            <div style="background:#5dade2; padding:10px; border-radius:50%; color:white;">ES</div>
+            <div>
+                <div class="logo-text">WinstXD320</div>
+                <div style="font-size: 14px; letter-spacing: 2px;">Nosotros creamos software.</div>
+            </div>
+        </div>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="desktop.html">Desktop</a></li>
+            <li><a href="moviles.html">Moviles</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobre-mi.html">Sobre mi</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="main-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>© Todos los derechos reservados - Nosotros creamos software.</p>
+            <p>📍 Con ❤️​ a Nicaragua.</p>
+        </div>
+        <div class="footer-social">
+            
+            <a href="https://www.youtube.com/@winstxd320" target="_blank" class="social-icon youtube" title="YouTube">▶</a>
+        </div>
+    </div>
+</footer>
+```[cite: 10]
+
+---
+
+### 3. Archivo `layout.js` (Gestor automático)
+Reemplaza todo el contenido de tu archivo **`layout.js`** con este script optimizado que inyecta correctamente el menú arriba y el footer al final absoluto de todas tus páginas:
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+    const headerContainer = document.getElementById("header-placeholder");
+
+    if (headerContainer) {
+        fetch("header.html")
+            .then(response => {
+                if (!response.ok) throw new Error("No se pudo cargar header.html");
+                return response.text();
+            })
+            .then(html => {
+                const tempDiv = document.createElement("div");
+                tempDiv.innerHTML = html;
+
+                // Extraemos el bloque del menú y el footer por separado
+                const navHeaderWrapper = tempDiv.querySelector("#nav-header-wrapper");
+                const footerEl = tempDiv.querySelector("#main-footer");
+
+                // Insertamos header y nav en el placeholder de la página
+                if (navHeaderWrapper) {
+                    headerContainer.innerHTML = navHeaderWrapper.innerHTML;
+                }
+
+                // Insertamos el footer al final absoluta del body
+                if (footerEl) {
+                    document.body.appendChild(footerEl);
+                }
+
+                marcarPestanaActiva();
+            })
+            .catch(error => console.error("Error cargando la cabecera:", error));
+    }
+});
+
+function marcarPestanaActiva() {
+    const paginaActual = window.location.pathname.split("/").pop() || "index.html";
+    const enlaces = document.querySelectorAll("nav ul li a");
+
+    enlaces.forEach(enlace => {
+        const href = enlace.getAttribute("href");
+        if (href === paginaActual) {
+            enlace.classList.add("active");
+        }
+    });
+}

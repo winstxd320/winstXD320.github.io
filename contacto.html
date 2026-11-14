@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinstXD320 - Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* --- Contenido Contacto --- */
+        main {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-email {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 16px 45px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-email:hover {
+            background-color: #e64a19;
+            transform: translateY(-2px);
+        }
+
+        .email-text {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .email-text span {
+            font-weight: bold;
+            color: #8e44ad;
+        }
+
+        /* --- Botón Flotante --- */
+        .chat-widget {
+            position: fixed; bottom: 20px; right: 20px; background-color: #9b59b6; color: white;
+            padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí se cargan automáticamente el header y el nav -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contenido Contacto -->
+    <main>
+        <h1>Contacto</h1>
+        <p class="subtitle">Ponemos a su disposición nuestra vía directa de comunicación.</p>
+
+        <div class="contact-box">
+            <a href="mailto:winstonjosem@gmail.com" class="btn-email">
+                Contáctame por Email
+            </a>
+            <p class="email-text">O escríbenos directamente a: <span>winstonjosem@gmail.com</span></p>
+        </div>
+    </main>
+
+
+    <script src="layout.js"></script>
+</body>
+</html>

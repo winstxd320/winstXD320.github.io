@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinstXD320 - Software Desktop</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* --- Contenido Desktop (Solo de Desktop) --- */
+        main { padding: 20px 5% 60px 5%; }
+        .top-banners { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; gap: 20px; }
+        .banner-link { flex: 1; text-align: center; }
+        .banner-link img { max-width: 100%; height: auto; max-height: 100px; object-fit: contain; }
+        .main-title-banner {
+            flex: 1.5; background-color: #1a9c1a; color: white; text-align: center;
+            padding: 15px; border-radius: 8px; font-size: 32px; font-weight: bold;
+        }
+        .software-grid { display: flex; justify-content: flex-start; gap: 30px; flex-wrap: wrap; }
+        .software-card {
+            flex: 1; min-width: 300px; max-width: 400px; background: #fff;
+            border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .software-card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 1px solid #eee; background-color: #f0f0f0; }
+        .software-info { padding: 20px; text-align: center; }
+        .software-info h3 { color: #8e44ad; margin: 0 0 10px 0; font-size: 22px; }
+        .software-info p { color: #666; font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
+        .btn-descargar { display: inline-block; background-color: #3498db; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn-descargar:hover { background-color: #2980b9; }
+
+        /* --- Botón Flotante --- */
+        .chat-widget {
+            position: fixed; bottom: 20px; right: 20px; background-color: #9b59b6; color: white;
+            padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí se cargarán automáticamente el header y el nav -->
+    <div id="header-placeholder"></div>
+
+   <!-- Contenido Desktop -->
+    <main style="padding: 40px 5%; text-align: center;">
+        <h1 style="color: #8e44ad; font-size: 36px; margin-bottom: 40px;">Aplicaciones de Escritorio</h1>
+
+        <div class="software-grid">
+            <!-- TARJETA 1 -->
+            <div class="software-card">
+                <img src="imagenes/av 1.png" alt="Aventura Informática">
+                <div class="software-info">
+                    <h3>Aventura Informática</h3>
+                    <p>Explora este increíble software interactivo. Diseñado para ofrecer la mejor experiencia y herramientas educativas para el usuario.</p>
+                    <a href="av.html" class="btn-descargar">Descargar / Ver más</a>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="software-card">
+                <img src="imagenes/tf 1.png" alt="Transmisión de Radio">
+                <div class="software-info">
+                    <h3>Transmisión de Radio</h3>
+                    <p>Potente herramienta para gestionar tu emisora. Transmite en vivo, programa parrillas y administra tu audio de manera profesional.</p>
+                    <a href="tr.html" class="btn-descargar">Descargar / Ver más</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <
+
+    <script src="layout.js"></script>
+</body>
+</html>

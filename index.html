@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinstXD320 - Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* --- Contenido Principal (Solo de Inicio) --- */
+        main { padding: 40px 5%; text-align: center; }
+        h1 { color: #8e44ad; font-size: 36px; margin-bottom: 50px; }
+        .services-grid { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
+        .service-card { flex: 1; min-width: 250px; max-width: 350px; text-align: center; }
+        .service-card img {
+            width: 220px; height: 220px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .service-card h3 { color: #8e44ad; font-size: 22px; text-decoration: underline; margin-bottom: 10px; }
+        .service-card p { color: #555; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí se cargarán automáticamente el header y el nav -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contenido Inicio -->
+    <main>
+        <h1>WinstXD320</h1>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <a href="desktop.html">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop" alt="Software Desktop">
+                </a>
+                <h3>Software Desktop</h3>
+                <p>Descubre potentes herramientas para potenciar tu negocio y optimizar tus tareas diarias.</p>
+            </div>
+            
+            <div class="service-card">
+                <a href="moviles.html">
+                    <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=400&auto=format&fit=crop" alt="Software Android">
+                </a>
+                
+                <h3>Software Android</h3>
+                <p>Sumérgete en el mundo de las aplicaciones móviles y lleva tu empresa a donde estén tus clientes.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="layout.js"></script>
+</body>
+</html>
