@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ericksystem - Aplicaciones Móviles</title>
+    <title>WinstXD320 - Aplicaciones Móviles</title>
     <link rel="stylesheet" href="estilos.css">
     <style>
         /* --- Contenido Móviles --- */
@@ -53,14 +53,21 @@
             margin-bottom: 20px;
         }
 
-        .badge-coming {
+        .btn-download-apk {
             display: inline-block;
-            background-color: #e67e22;
+            background-color: #0084ff;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            font-size: 16px;
             font-weight: bold;
-            font-size: 15px;
+            padding: 12px 30px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 132, 255, 0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-download-apk:hover {
+            background-color: #006dd9;
+            transform: translateY(-2px);
         }
 
         /* --- Botón Flotante --- */
@@ -82,10 +89,10 @@
 
         <div class="mobile-container">
             <div class="mobile-card">
-                <img src="imagenes/reproductor.jpeg" alt="Mi Reproductor de Música">
-                <h3>Mi Reproductor</h3>
-                <p>Reproductor de música personalizado desarrollado en C# con .NET para Android. Organiza y reproduce tus pistas favoritas de forma fluida.</p>
-                <div class="badge-coming">🎵 Muy pronto para descargar</div>
+                <img src="imagenes/reproductor.jpeg" alt="Music Player Basic">
+                <h3>Music Player Basic</h3>
+                <p>Reproductor básico de música que te permite cargar música de tu carpeta, añadir a favoritos las músicas que tienes en tu carpeta y reproducirlas por aparte.</p>
+                <a href="https://github.com/winstxd320/Music-Player-Basic/releases/download/Reproductor1/Music.Player.Basic.apk" target="_blank" rel="noopener noreferrer" class="btn-download-apk">Descargar .APK</a>
             </div>
         </div>
     </main>

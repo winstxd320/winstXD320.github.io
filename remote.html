@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinstXD320 - Remote Support</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* --- Contenido Detalle de Software --- */
+        main {
+            padding: 40px 6%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 50px;
+        }
+
+        .product-image-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+        }
+
+        .product-image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1.5;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .product-title-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 5px;
+        }
+
+        .product-title-row img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+        }
+
+        .product-details h1 {
+            color: #8e44ad;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .product-version {
+            color: #0084ff;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .product-meta {
+            margin-bottom: 25px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .product-meta span {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .btn-download-app {
+            display: inline-block;
+            background-color: #0084ff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 35px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 132, 255, 0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-download-app:hover {
+            background-color: #006dd9;
+            transform: translateY(-2px);
+        }
+
+        /* --- Sección de Galería de Capturas --- */
+        .gallery-section h3 {
+            color: #8e44ad;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 360px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .gallery-card p {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            padding: 10px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* --- Botón Flotante --- */
+        .chat-widget {
+            position: fixed; bottom: 20px; right: 20px; background-color: #9b59b6; color: white;
+            padding: 15px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí se cargan automáticamente el header y el nav -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contenido Detalle de Remote Support -->
+    <main>
+        <div class="product-container">
+            <!-- Imagen Principal -->
+            <div class="product-image-box">
+                <img src="imagenes/remote 1.png" alt="Remote Support">
+            </div>
+
+            <!-- Detalles y Descripción -->
+            <div class="product-details">
+                <div class="product-title-row">
+                    <img src="imagenes/rm icono.png" alt="Icono Remote Support">
+                    <h1>Remote Support</h1>
+                </div>
+                <div class="product-version">Versión 1.0 • Instalador Ejecutable (.exe)</div>
+                
+                <div class="product-description">
+                    Herramienta de asistencia remota instantánea y multimonitor diseñada para brindar soporte técnico de forma rápida, segura y eficiente. Permite conectarse a otro equipo ingresando su dirección ID única, con detección automática de múltiples pantallas y opción de control compartido de mouse y teclado previa autorización del usuario remoto.
+                </div>
+
+                <div class="product-meta">
+                    <div>Peso: <span>53.3 MB</span></div>
+                    <div>Formato: <span>Aplicación de Escritorio (.exe)</span></div>
+                </div>
+
+                <a href="https://github.com/winstxd320/Remote-Support/releases/download/RemoteSupport/Instalar.Remote.Support.exe" target="_blank" rel="noopener noreferrer" class="btn-download-app">Descargar .EXE</a>
+            </div>
+        </div>
+
+        <!-- Galería de Capturas -->
+        <div class="gallery-section">
+            <h3>Capturas de la Aplicación</h3>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="imagenes/remote 1.png" alt="Panel Principal de Conexión">
+                    <p>Panel Principal y Conexión por ID</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="imagenes/remote 2.png" alt="Créditos e Información">
+                    <p>Información y Detección Multimonitor</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="layout.js"></script>
+</body>
+</html>
