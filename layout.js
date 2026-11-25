@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerContainer = document.getElementById("header-placeholder");
 
     if (headerContainer) {
-        fetch("header.html")
+        fetch("header.html", { cache: "no-cache" })
             .then(response => {
                 if (!response.ok) throw new Error("No se pudo cargar header.html");
                 return response.text();
