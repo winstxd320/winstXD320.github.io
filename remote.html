@@ -92,6 +92,13 @@
             color: #2980b9;
         }
 
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
         .btn-download-app {
             display: inline-block;
             background-color: #0084ff;
@@ -106,6 +113,23 @@
 
         .btn-download-app:hover {
             background-color: #006dd9;
+            transform: translateY(-2px);
+        }
+
+        .btn-buy-pro {
+            display: inline-block;
+            background-color: #8e44ad;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 35px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(142, 68, 173, 0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-buy-pro:hover {
+            background-color: #732d91;
             transform: translateY(-2px);
         }
 
@@ -196,7 +220,10 @@
                     <div>Formato: <span>Aplicación de Escritorio (.exe)</span></div>
                 </div>
 
-                <a href="https://github.com/winstxd320/Remote-Support/releases/download/RemoteSupport/Instalar.Remote.Support.exe" target="_blank" rel="noopener noreferrer" class="btn-download-app">Descargar .EXE</a>
+                <div class="product-actions">
+                    <a href="https://github.com/winstxd320/Remote-Support/releases/download/RemoteSupport/Instalar.Remote.Support.exe" target="_blank" rel="noopener noreferrer" class="btn-download-app">Descargar .EXE</a>
+                    <a href="https://www.paypal.com/ncp/payment/6PZC99S3TZ75J" target="_blank" rel="noopener noreferrer" class="btn-buy-pro">Comprar versión Pro</a>
+                </div>
             </div>
         </div>
 
